@@ -1,9 +1,183 @@
+body{
+    background-color: rgb(165,170,172);
+}
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+@media only screen and (max-width: 674px) {
+    .main-content{
+        display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1em;
+    grid-row-gap: 100px;
+    }
+}
+.main-content{
+    display: grid;
+    height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    grid-template-columns: 300px 700px;
+    
+    
+}
 
-/* Write CSS code below */
+.left-section{
+    background-color: rgb(55,48,58);
+    height: 1000px;
+    width: 300px;
+    grid-column: span 1;
+}
+.right-section{
+    background-color: rgb(245,238,237);
+    height: 1000px;
+    width:700px;
+    grid-column: span 1/span 2;
+}
+.left-content{
+    text-align: center;
+    padding: 1rem;
+
+}
+/* .profile{
+    margin: 6%;
+} */
+.profile-image{
+    display: block;
+    width: 60%;
+    margin: auto;
+    border: 5px solid #ddd;
+    border-radius: 30%;
+}
+.name{
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 0.8rem;
+    margin: 0px;
+}
+.designation{
+    color: darkcyan;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.discription{
+    color: #f5f5f5;
+    padding: 1rem;
+    font-size: 0.75rem;
+    margin: 0px 0px;
+}
+.contact-info{
+
+}
+.social-media{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+a > img{
+    color: #ddd;
+}
+.icon{
+    display: inline;
+    list-style: none;
+    color: white;
+    width: 25px;
+}
+.personal-details{
+    margin: 5% 10%;
+}
+.personal-details > div{
+    display: flex;
+    /* flex-direction: row; */
+    margin-top: 2%;
+}
+/* .personal-details>div>*{
+    float: right;
+} */
+.location{
+    display: flex;
+    padding: 5px 0px;
+    font-size: 1rem;
+}
+.location :nth-child(1){
+    width: 10%;
+}
+.location :nth-child(2){
+    width: 80%;
+}
+.skills{
+    color: #ddd;
+    text-align: center;
+    font-size: 1.20rem;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+    letter-spacing: 0.2px;
+}
+.skills>h4{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.skill-item>p{
+    margin:  0px;
+    font-size: 0.85rem;
+    color: white;
+    padding: 0% 5%;
+    text-align: left;
+}
+progress{
+    width: 90%;
+    margin-bottom: 4%;
+}
+progress::-webkit-progress-bar-value {
+    background: whitesmoke;
+}
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+.para-text{
+    margin: 0px;
+    padding: 0.5rem;
+    text-align: justify;
+}
+.sub-right-title{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+#right-sec-div{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    word-wrap: break-word;
+    
+}
+.right-col{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    margin-left: 4rem;
+}
+/* .left-sec{
+    width: 70%;
+}
+.right-sec{
+    width: 15%;
+} */
